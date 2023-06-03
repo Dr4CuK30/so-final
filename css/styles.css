@@ -42,7 +42,7 @@ table tr th, table tr td{
 
 .ejecucion {
     width: 48%;
-    min-height: 75px;
+    min-height: 200px;
     padding: 5px;
     margin: 1%;
     border: 1px solid rgb(99, 99, 99);
@@ -52,7 +52,7 @@ table tr th, table tr td{
 
 .control {
     width: 48%;
-    min-height: 75px;
+    min-height: 200px;
     padding: 5px;
     margin: 1%;
     border: 1px solid rgb(99, 99, 99);
@@ -61,48 +61,11 @@ table tr th, table tr td{
 }
 
 .control button {
-    width: 31.33%;
-    height: 26px;
-    margin: 1%;
-    border: 1px solid rgb(99, 99, 99);
-    border-radius: 3px;
-    float: left;
-}
+    width: 44%;
+    height: 50px;
+    font-size: 1rem;
+    margin: 4px;
 
-#iniciar {
-    background-color: #76dd63;
-}
-
-#iniciar:hover {
-    cursor: pointer;
-    background-color: #54ad44;
-}
-
-#parar {
-    background-color: #dbdd63;
-}
-
-#parar:hover {
-    cursor: pointer;
-    background-color: #ada644;
-}
-
-#bloquear {
-    background-color: #dd6363;
-}
-
-#bloquear:hover {
-    cursor: pointer;
-    background-color: #ad4444;
-}
-
-#agregar1, #agregar2, #agregar3 {
-    background-color: #63d5dd;
-}
-
-#agregar1:hover, #agregar2:hover, #agregar3:hover {
-    cursor: pointer;
-    background-color: #44a6ad;
 }
 
 .colas {
@@ -111,9 +74,9 @@ table tr th, table tr td{
 }
 
 .robin {
-    width: 31.33%;
-    min-height: 100px;
-    max-height: 100px;
+    width: 48%;
+    min-height: 200px;
+    max-height: 200px;
     padding: 10px;
     margin: 1%;
     border: 1px solid rgb(99, 99, 99);
@@ -123,9 +86,9 @@ table tr th, table tr td{
 }
 
 .sjf {
-    width: 31.33%;
-    min-height: 100px;
-    max-height: 100px;
+    width: 48%;
+    min-height: 200px;
+    max-height: 200px;
     padding: 10px;
     margin: 1%;
     border: 1px solid rgb(99, 99, 99);
@@ -135,9 +98,9 @@ table tr th, table tr td{
 }
 
 .fcfs {
-    width: 31.33%;
-    min-height: 100px;
-    max-height: 100px;
+    width: 48%;
+    min-height: 200px;
+    max-height: 200px;
     padding: 10px;
     margin: 1%;
     border: 1px solid rgb(99, 99, 99);
@@ -148,8 +111,8 @@ table tr th, table tr td{
 
 .bloqueados {
     width: 48%;
-    min-height: 100px;
-    max-height: 100px;
+    min-height: 200px;
+    max-height: 200px;
     padding: 10px;
     margin: 1%;
     border: 1px solid rgb(99, 99, 99);
@@ -159,9 +122,9 @@ table tr th, table tr td{
 }
 
 .terminados {
-    width: 48%;
-    min-height: 100px;
-    max-height: 100px;
+    width: 98%;
+    min-height: 200px;
+    max-height: 200px;
     padding: 10px;
     margin: 1%;
     border: 1px solid rgb(99, 99, 99);
@@ -180,8 +143,8 @@ table tr th, table tr td{
 }
 
 .tabla-cal .calculos {
-    min-height: 256px;
-    max-height: 256px;
+    min-height: 600px;
+    max-height: 600px;
     overflow-y: auto;
 }
 
@@ -207,7 +170,7 @@ table tr th, table tr td{
 }
 
 #gantt td {
-    border: none;
+    border: 1px solid rgb(99, 99, 99);
 }
 
 .esperando {background-color: #3AC5D5;}

@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Multicola</title>
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
 	<div class="contenedor">
@@ -12,8 +13,8 @@
 			<div class="multicola">
 				<div class="ejecucion">
 					<h3>Sección crítica</h3>
-					<table>
-						<tr><td colspan="2">Tiempo <span id="timer">0</span> s</td></tr>
+					<table class="table table-hover">
+						<tr class="table-primary"><td colspan="2">Tiempo <span id="timer">0</span> s</td></tr>
 						<tr id="proceso-actual">
 							<td>Proceso</td>
 							<td>Rafaga</td>
@@ -22,20 +23,20 @@
 				</div>
 
 				<div class="control">
-					<button id="iniciar">Iniciar</button>
-					<button id="parar">Parar</button>
-					<button id="bloquear">Bloquear</button>
-					<button id="agregar1">Agregar RR</button>
-					<button id="agregar2">Agregar SJF</button>
-					<button id="agregar3">Agregar FCFS</button>
+					<button id="iniciar" type="button" class="btn btn-outline-success" >Iniciar</button>
+					<button id="parar" type="button" class="btn btn-outline-warning" >Parar</button>
+					<button id="bloquear" type="button" class="btn btn-outline-danger" >Bloquear</button>
+					<button id="agregar1" type="button" class="btn btn-outline-info" >Agregar RR</button>
+					<button id="agregar2" type="button" class="btn btn-outline-info" >Agregar SJF</button>
+					<button id="agregar3" type="button" class="btn btn-outline-info" >Agregar FCFS</button>
 				</div>
 
 				<div class="colas">
 					<div class="robin">
-						<table>
+						<table class="table table-hover" >
 							<h3>Round Robin</h3>
 							<thead>
-								<tr>
+								<tr class="table-info" >
 									<th>PID</th>
 									<th>Prioridad</th>
 									<th>Llegada</th>
@@ -47,10 +48,10 @@
 					</div>
 
 					<div class="sjf">
-						<table>
+						<table class="table table-hover" >
 							<h3>SJF</h3>
 							<thead>
-								<tr>
+								<tr class="table-warning" >
 									<th>PID</th>
 									<th>Prioridad</th>
 									<th>Llegada</th>
@@ -62,10 +63,10 @@
 					</div>
 
 					<div class="fcfs">
-						<table>
+						<table class="table table-hover" >
 							<h3>FCFS</h3>
 							<thead>
-								<tr>
+								<tr class="table-danger" >
 									<th>PID</th>
 									<th>Prioridad</th>
 									<th>Llegada</th>
@@ -77,7 +78,7 @@
 					</div>
 
 					<div class="bloqueados">
-						<table>
+						<table class="table table-hover" >
 							<h3>Bloqueados</h3>
 							<thead>
 								<tr>
@@ -92,10 +93,10 @@
 					</div>
 
 					<div class="terminados">
-						<table>
+						<table class="table table-hover" >
 							<h3>Terminados</h3>
 							<thead>
-								<tr>
+								<tr class="table-dark" >
 									<th>PID</th>
 									<th>Prioridad</th>
 									<th>Llegada</th>
@@ -111,9 +112,9 @@
 			<div class="tabla-cal">
 				<h3>Tabla de cálculos</h3>
 				<div class="calculos">
-					<table>
+					<table class="table table-hover" >
 						<thead>
-							<tr>
+							<tr class="table-success">
 								<th>PID</th>
 								<th>Prioridad</th>
 								<th>Llegada</th>
