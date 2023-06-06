@@ -42,7 +42,7 @@ table tr th, table tr td{
 
 .ejecucion {
     width: 48%;
-    min-height: 200px;
+    min-height: 120px;
     padding: 5px;
     margin: 1%;
     border: 1px solid rgb(99, 99, 99);
@@ -52,7 +52,7 @@ table tr th, table tr td{
 
 .control {
     width: 48%;
-    min-height: 200px;
+    min-height: 120px;
     padding: 5px;
     margin: 1%;
     border: 1px solid rgb(99, 99, 99);
@@ -75,8 +75,8 @@ table tr th, table tr td{
 
 .robin {
     width: 48%;
-    min-height: 200px;
-    max-height: 200px;
+    min-height: 120px;
+    max-height: 120px;
     padding: 10px;
     margin: 1%;
     border: 1px solid rgb(99, 99, 99);
@@ -87,8 +87,8 @@ table tr th, table tr td{
 
 .sjf {
     width: 48%;
-    min-height: 200px;
-    max-height: 200px;
+    min-height: 120px;
+    max-height: 120px;
     padding: 10px;
     margin: 1%;
     border: 1px solid rgb(99, 99, 99);
@@ -99,8 +99,8 @@ table tr th, table tr td{
 
 .fcfs {
     width: 48%;
-    min-height: 200px;
-    max-height: 200px;
+    min-height: 120px;
+    max-height: 120px;
     padding: 10px;
     margin: 1%;
     border: 1px solid rgb(99, 99, 99);
@@ -111,8 +111,8 @@ table tr th, table tr td{
 
 .bloqueados {
     width: 48%;
-    min-height: 200px;
-    max-height: 200px;
+    min-height: 120px;
+    max-height: 120px;
     padding: 10px;
     margin: 1%;
     border: 1px solid rgb(99, 99, 99);
@@ -123,8 +123,8 @@ table tr th, table tr td{
 
 .terminados {
     width: 98%;
-    min-height: 200px;
-    max-height: 200px;
+    min-height: 120px;
+    max-height: 120px;
     padding: 10px;
     margin: 1%;
     border: 1px solid rgb(99, 99, 99);
@@ -143,8 +143,8 @@ table tr th, table tr td{
 }
 
 .tabla-cal .calculos {
-    min-height: 600px;
-    max-height: 600px;
+    min-height: 500px;
+    max-height: 500px;
     overflow-y: auto;
 }
 
