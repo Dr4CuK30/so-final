@@ -1,5 +1,5 @@
 function Procesador() {
-  this.valor_plan_envejecimiento = 8;
+  this.valor_envejecimiento = 6;
 
   this.quantum = 4;
   this.probabilidad_bloqueo = 10;
@@ -17,6 +17,9 @@ function Procesador() {
   this.listos = new Cola(); // Listos
   this.term = new Cola(); // Terminados
   this.general = new Cola(); // Total con todos los procesos
+
+  // Tabla envejecimiento
+  this.envejecimiento = [];
 
   this.empezar = () => {
     this.hilo_timer = setInterval(() => {
@@ -118,7 +121,8 @@ function Procesador() {
           }
         }
       });
-
+      this.analizar_envejecimiento();
+      this.actualizar_envejecimiento();
       this.actualizar_cola("rr");
       this.actualizar_cola("sjf");
       this.actualizar_cola("fcfs");
@@ -227,6 +231,69 @@ function Procesador() {
     }
   };
 
+  this.analizar_envejecimiento = () => {
+    const primer_sjf = this.sjf.primero();
+    const primer_fcfs = this.fcfs.primero();
+    let proceso;
+    if (
+      primer_sjf &&
+      this.timer - primer_sjf.obj.llegada >= this.valor_envejecimiento
+    ) {
+      proceso = primer_sjf.obj;
+      this.sjf.atender();
+      this.rr.ingresar(
+        new Proceso(
+          this.timer + 1,
+          proceso.prioridad - 1,
+          proceso.rafaga_res + 1,
+          proceso.nombre
+        )
+      );
+      this.agregarEnvejecido(proceso, this.timer + 1);
+    }
+    if (
+      primer_fcfs &&
+      this.timer - primer_fcfs.obj.llegada >= this.valor_envejecimiento
+    ) {
+      proceso = primer_fcfs.obj;
+      this.fcfs.atender();
+      this.sjf.ingresar(
+        new Proceso(
+          this.timer + 1,
+          proceso.prioridad - 1,
+          proceso.rafaga_res + 1,
+          proceso.nombre
+        )
+      );
+      this.agregarEnvejecido(proceso, this.timer + 1);
+    }
+  };
+
+  this.agregarEnvejecido = (proceso, tiempo) => {
+    this.envejecimiento.push({
+      antPrioridad: proceso.prioridad,
+      nuevaPrioridad: proceso.prioridad - 1,
+      nombre: proceso.nombre,
+      tiempo: tiempo,
+    });
+  };
+
+  this.actualizar_envejecimiento = () => {
+    cadena = "";
+    this.envejecimiento.forEach(
+      ({ antPrioridad, nuevaPrioridad, nombre, tiempo }) => {
+        cadena += "<tr>";
+        cadena += "<th>" + nombre + "</th>";
+        cadena += "<th>" + tiempo + "</th>";
+        cadena += "<td>" + antPrioridad + "</td>";
+        cadena += "<td>" + nuevaPrioridad + "</td>";
+        cadena += "</tr>";
+      }
+    );
+
+    $("#envejecimiento").html(cadena);
+  };
+
   this.actualizar_cola = (tipo) => {
     cadena = "";
     switch (tipo) {
@@ -289,8 +356,6 @@ function Procesador() {
         break;
     }
   };
-
-  this.analizarPlanEnvejecimiento = () => {};
 
   this.actualizar_general = () => {
     cola = new Cola();
