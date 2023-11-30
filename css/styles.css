@@ -1,185 +1,269 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 h3 {
-    font-size: 16px;
-    color: rgb(22, 101, 167);
-    text-align: center;
+  font-size: 16px;
+  color: rgb(22, 101, 167);
+  text-align: center;
 }
 
 table {
-    width: 100%;
-    font-size: 12px;
-    text-align: center;
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
 }
 
-table tr th, table tr td{
-    border-bottom: 1px solid rgb(99, 99, 99);
+table tr th,
+table tr td {
+  border-bottom: 1px solid rgb(99, 99, 99);
 }
 
 .contenedor {
-    width: 100%;
-    height: auto;
-    background-color: #fafafa;
-    float: left;
+  width: 100%;
+  height: auto;
+  background-color: #fafafa;
+  float: left;
 }
 
 .informacion {
-    width: 100%;
-    float: left;
+  width: 100%;
+  float: left;
 }
 
 .multicola {
-    width: 50%;
-    float: left;
+  width: 50%;
+  float: left;
 }
 
 .ejecucion {
-    width: 48%;
-    min-height: 120px;
-    padding: 5px;
-    margin: 1%;
-    border: 1px solid rgb(99, 99, 99);
-    border-radius: 5px;
-    float: left;
+  width: 48%;
+  min-height: 120px;
+  padding: 5px;
+  margin: 1%;
+  border: 1px solid rgb(99, 99, 99);
+  border-radius: 5px;
+  float: left;
 }
 
 .control {
-    width: 48%;
-    min-height: 120px;
-    padding: 5px;
-    margin: 1%;
-    border: 1px solid rgb(99, 99, 99);
-    border-radius: 5px;
-    float: left;
+  width: 48%;
+  min-height: 120px;
+  padding: 5px;
+  margin: 1%;
+  border: 1px solid rgb(99, 99, 99);
+  border-radius: 5px;
+  float: left;
 }
 
 .control button {
-    width: 44%;
-    height: 50px;
-    font-size: 1rem;
-    margin: 4px;
-
+  width: 44%;
+  height: 50px;
+  font-size: 1rem;
+  margin: 4px;
 }
 
 .colas {
-    width: 100%;
-    float: left;
+  width: 100%;
+  float: left;
 }
 
 .robin {
-    width: 48%;
-    min-height: 120px;
-    max-height: 120px;
-    padding: 10px;
-    margin: 1%;
-    border: 1px solid rgb(99, 99, 99);
-    border-radius: 3px;
-    float: left;
-    overflow-y: auto;
+  width: 100%;
+  min-height: 120px;
+  max-height: 120px;
+  padding: 10px;
+  margin: 1%;
+  border: 1px solid rgb(99, 99, 99);
+  border-radius: 3px;
+  float: left;
+  overflow-y: auto;
 }
 
 .sjf {
-    width: 48%;
-    min-height: 120px;
-    max-height: 120px;
-    padding: 10px;
-    margin: 1%;
-    border: 1px solid rgb(99, 99, 99);
-    border-radius: 3px;
-    float: left;
-    overflow-y: auto;
+  width: 100%;
+  min-height: 120px;
+  max-height: 120px;
+  padding: 10px;
+  margin: 1%;
+  border: 1px solid rgb(99, 99, 99);
+  border-radius: 3px;
+  float: left;
+  overflow-y: auto;
 }
 
 .fcfs {
-    width: 48%;
-    min-height: 120px;
-    max-height: 120px;
-    padding: 10px;
-    margin: 1%;
-    border: 1px solid rgb(99, 99, 99);
-    border-radius: 3px;
-    float: left;
-    overflow-y: auto;
+  width: 100%;
+  min-height: 120px;
+  max-height: 120px;
+  padding: 10px;
+  margin: 1%;
+  border: 1px solid rgb(99, 99, 99);
+  border-radius: 3px;
+  float: left;
+  overflow-y: auto;
 }
 
 .bloqueados {
-    width: 48%;
-    min-height: 120px;
-    max-height: 120px;
-    padding: 10px;
-    margin: 1%;
-    border: 1px solid rgb(99, 99, 99);
-    border-radius: 3px;
-    float: left;
-    overflow-y: auto;
-}
-
-.terminados {
-    width: 98%;
-    min-height: 120px;
-    max-height: 120px;
-    padding: 10px;
-    margin: 1%;
-    border: 1px solid rgb(99, 99, 99);
-    border-radius: 3px;
-    float: left;
-    overflow-y: auto;
+  width: 100%;
+  min-height: 120px;
+  max-height: 120px;
+  padding: 10px;
+  margin: 1%;
+  border: 1px solid rgb(99, 99, 99);
+  border-radius: 3px;
+  float: left;
+  overflow-y: auto;
 }
 
 .tabla-cal {
-    width: 48%;
-    padding: 10px;
-    margin: 1%;
-    border: 1px solid rgb(99, 99, 99);
-    border-radius: 3px;
-    float: left;
+  width: 48%;
+  padding: 10px;
+  margin: 1%;
+  border: 1px solid rgb(99, 99, 99);
+  border-radius: 3px;
+  float: left;
 }
 
 .tabla-cal .calculos {
-    min-height: 500px;
-    max-height: 500px;
-    overflow-y: auto;
+  min-height: 454px;
+  max-height: 454px;
+  overflow-y: auto;
 }
 
 .diagrama-gantt {
-    width: 98%;
-    padding: 10px;
-    margin: 0 1%;
-    border: 1px solid rgb(99, 99, 99);
-    border-radius: 3px;
-    float: left;
+  width: 98%;
+  padding: 10px;
+  margin: 0 1%;
+  border: 1px solid rgb(99, 99, 99);
+  border-radius: 3px;
+  float: left;
 }
 
 .diagrama-gantt .diagrama {
-    min-height: 280px;
-    max-height: 280px;
-    overflow: auto;
+  min-height: 280px;
+  max-height: 280px;
+  overflow: auto;
 }
 
-#timeline th, #gantt td {
-    width: 20px;
-    min-width: 20px;
-    max-width: 20px;
+#timeline th,
+#gantt td {
+  width: 20px;
+  min-width: 20px;
+  max-width: 20px;
 }
 
 #gantt td {
-    border: 1px solid rgb(99, 99, 99);
+  border: 1px solid rgb(99, 99, 99);
 }
 
-.esperando {background-color: #3AC5D5;}
-.ejecutando {background-color: #51D53A;}
-.bloqueado {background-color: #EA1919;}
-.suspendido {background-color: #E5D92D;}
+.esperando {
+  background-color: #3ac5d5;
+}
+.ejecutando {
+  background-color: #51d53a;
+}
+.bloqueado {
+  background-color: #ea1919;
+}
+.suspendido {
+  background-color: #e5d92d;
+}
 
-.Esperando {color: #3AC5D5; font-weight: 500;}
-.Ejecutando {color: #51D53A; font-weight: 500;}
-.Bloqueado {color: #EA1919; font-weight: 500;}
-.Suspendido {color: #E5D92D; font-weight: 500;}
-.Terminado {color: #994095; font-weight: 500;}
+.Esperando {
+  color: #3ac5d5;
+  font-weight: 500;
+}
+.Ejecutando {
+  color: #51d53a;
+  font-weight: 500;
+}
+.Bloqueado {
+  color: #ea1919;
+  font-weight: 500;
+}
+.Suspendido {
+  color: #e5d92d;
+  font-weight: 500;
+}
+.Terminado {
+  color: #994095;
+  font-weight: 500;
+}
+
+.leyend {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+.leyend-block {
+  background-color: #ea1919;
+}
+
+.leyend-wait {
+  background-color: #3ac5d5;
+}
+.leyend-progress {
+  background-color: #51d53a;
+}
+.leyend-suspended {
+  background-color: #e5d92d;
+}
+
+.leyend-label {
+  font-size: larger;
+}
+
+/* SEMAFORO */
+
+ul.semaforo {
+  float: left;
+  position: relative;
+  display: flex;
+  margin: 0 100px;
+  padding: 15px;
+  list-style-type: none;
+  border: 6px double grey;
+  background: black;
+  background: linear-gradient(-90deg, #45484d 0%, #000000 100%);
+  border-radius: 20%;
+}
+ul.semaforo li {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 60%;
+  background: lightgrey;
+  margin: 0px 15px;
+  background: linear-gradient(
+    top,
+    rgba(187, 187, 187, 1) 0%,
+    rgba(119, 119, 119, 1) 99%
+  );
+  box-shadow: inset 0 -5px 15px rgba(255, 255, 255, 0.4),
+    inset -2px -1px 40px rgba(0, 0, 0, 0.4), 0 0 1px #000;
+}
+ul.semaforo li:after {
+  content: "";
+  width: 60px;
+  height: 30px;
+  left: 20px;
+  top: 10px;
+  box-shadow: 0px 0 20px 35px rgba(20, 20, 20, 0.1);
+  border-radius: 30px / 15px;
+}
+.rojo li:nth-of-type(2) {
+  background: #cc0000;
+  background: radial-gradient(center, ellipse cover, #ff0000 1%, #cc0000 100%);
+}
+
+.verde li:nth-of-type(1) {
+  background: #00ff00;
+}
